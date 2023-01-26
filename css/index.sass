@@ -29,18 +29,25 @@ body
 
 .flex
     display: flex
+    &-jc
+        justify-content: center
+    &-d-col
+        flex-direction: column
+    &-a-i
+        align-items: center
+    &-wr
+        flex-wrap: wrap
 
-.flex-jc
-    justify-content: center
-
-.flex-d-col
-    flex-direction: column
-
-.flex-a-i
-    align-items: center
-
-.flex-wr
-    flex-wrap: wrap
+.grid
+    display: grid
+    &-col
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+    &-ji
+        justify-items: center
+    &-ai
+        align-items: center
+    &-gap
+        grid-gap: 5%
 
 .nav
     margin-left: 10px
@@ -59,17 +66,6 @@ body
 
 .container
     padding: 0.5% 10%
-
-.left-part
-    max-width: 30%
-
-.chair
-    position: relative
-    float: left
-    left: 0
-    height: 80vh
-    background: #c4c4c4
-    border-radius: 50%
 
 .topic
     width: 100px
@@ -105,6 +101,17 @@ body
     left: 50%
     transform: translate(-50%, -50%)
 
+.left-part
+
+.chair
+    position: relative
+    float: left
+    left: 0
+    width: 100%
+    height: auto
+    background: #c4c4c4
+    border-radius: 50%
+
 @media (max-width: 1200px)
 
 @media (max-width: 992px)
@@ -112,6 +119,10 @@ body
 @media (max-width: 767px)
 
 @media (max-width: 500px)
+    body
+        & p
+            font-size: 14px
+
     .navbar
         justify-content: center
 
