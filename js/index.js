@@ -1,8 +1,10 @@
-// По событию скрола
-window.addEventListener('scroll', function() {
-    // Найти блок к которому нужно проскролить
-    const element = document.querySelector('#target')
-  
-    // скролим к элементу
-    element.scrollIntoView({ behavior: 'smooth' })
-  });
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
