@@ -1,0 +1,165 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background: #e1e1e1;
+  overflow-y: hidden;
+  margin: 0;
+  color: #484e47;
+  font-family: montserrat;
+  font-weight: lighter;
+}
+body a {
+  color: #484e47;
+  text-decoration: none;
+  cursor: pointer;
+}
+body button {
+  font-family: montserrat;
+  font-weight: lighter;
+  font-size: 14px;
+  outline: none;
+}
+body p {
+  font-size: 20px;
+  text-align: justify;
+}
+body hr {
+  margin: 0;
+}
+body ol, body ul {
+  list-style: none;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-jc {
+  justify-content: center;
+}
+
+.flex-d-col {
+  flex-direction: column;
+}
+
+.flex-a-i {
+  align-items: center;
+}
+
+.flex-wr {
+  flex-wrap: wrap;
+}
+
+.nav {
+  margin-left: 10px;
+  font-family: montserrat;
+  font-size: 20px;
+  font-weight: 200;
+}
+.navbar {
+  z-index: 20;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  background: #e1e1e1;
+}
+
+.container {
+  padding: 0.5% 10%;
+}
+
+.left-part {
+  max-width: 30%;
+}
+
+.chair {
+  position: relative;
+  float: left;
+  left: 0;
+  height: 80vh;
+  background: #c4c4c4;
+  border-radius: 50%;
+}
+
+.topic {
+  width: 100px;
+  font-size: 40px;
+  font-family: montserrat;
+  font-weight: 800;
+}
+
+.dropdown-content {
+  display: none;
+}
+
+.furniture {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main-wall {
+  color: white;
+  font-size: 150px;
+}
+.main-wall .signature {
+  font-size: 20px;
+}
+.main-wall svg {
+  position: absolute;
+  z-index: 4;
+  top: 115%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center-of {
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    justify-content: center;
+  }
+  .links {
+    display: none;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #e1e1e1;
+    min-width: 100%;
+    z-index: 1;
+  }
+  .dropdown-content a {
+    float: none;
+    color: #484e47;
+    padding: 12px 16px;
+    display: block;
+    text-align: center;
+  }
+  .dropdown-content a:hover {
+    background-color: #c7c7c7;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .main-wall span {
+    font-size: 100px;
+  }
+}/*# sourceMappingURL=index.css.map */
