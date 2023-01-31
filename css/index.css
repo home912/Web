@@ -145,9 +145,14 @@ body ol, body ul {
 }
 
 .fa {
-  font-size: 3vw !important;
+  font-size: 3vh !important;
 }
 
+@media (max-width: 767px) {
+  .chair {
+    height: 100vh;
+  }
+}
 @media (max-width: 500px) {
   body p {
     font-size: 14px;
