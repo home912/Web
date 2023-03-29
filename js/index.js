@@ -41,7 +41,7 @@ if (animItems.length > 0) {
   function offset(el) {
     const rect = el.getBoundingClientRect(),
       scrollLeft = windows.pageXOffset || document.documentElement.scrollLeft,
-      scrollTop = windows.pageYOffset || document.documentElement.scrollTop,
+      scrollTop = windows.pageYOffset || document.documentElement.scrollTop;
     return {
       top: rect.top + scrollTop, left: rect.left + scrollLeft
     }

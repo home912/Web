@@ -83,7 +83,7 @@ body
         display: none
 
     &-menu
-        
+
     &-list
         position: relative
         z-index: 2
@@ -97,37 +97,27 @@ body
     max-width: 80vw
     margin: 0 auto
 
-.furniture
-    position: relative
+.field
+    display: block
     width: 100%
     height: 100vh
     object-fit: cover
 
-.main-wall
-    color: white
-    font-size: 150px
-    & .signature
+.bar
+    margin: 2vw 0 0 0
+
+.text
+    &-big
+        color: white
+        font-size: 150px
+
+    &-small
+        color: white
         font-size: 20px
-    & svg
-        position: absolute
-        z-index: 4
-        top: 115%
-        left: 50%
-        transform: translate(-50%, -50%)
 
-
-.center-of
-    position: absolute
-    z-index: 4
-    top: 50%
-    left: 50%
-    transform: translate(-50%, 0%)
-    opacity: 0
-    transition: .5s
-
-    &._active
-        transform: translate(-50%, -50%)
-        opacity: 1
+.container-img
+    position: relative
+    text-align: center
 
 .centered
     position: absolute
@@ -143,8 +133,6 @@ body
     text-align: center
     color: white
     font-weight: bold
-    & span
-        font-size: 100px
 
 .chair
     width: auto
@@ -157,8 +145,7 @@ body
         height: 35vw
         width: auto
         transition: 0.2s
-        &:hover
-            scale: 1.1
+
     &s
         margin-top: 5%
         margin-bottom: 5%
@@ -255,7 +242,7 @@ footer
 
         &-menu
             position: fixed
-            top: -110%
+            top: -111%
             left: 0
             width: 100%
             height: 100%
@@ -270,10 +257,7 @@ footer
             & li
                 margin: 0 0 20px 0
         &-link
-
-    .second
-        margin-bottom: 100px
-
+        
     .card
         & img
             height: 100%
@@ -281,15 +265,18 @@ footer
         &s
             margin: -4px 0 0 0
             flex-direction: column
+
+    .fa
+        margin-right: 10px 
 @media (max-width: 500px)
     body
         min-width: 100vw
         & p
             font-size: 14px
 
-    .main-wall
-        & span
-            font-size: 100px
+    .text
+        &-big
+            font-size: 30vw
 
     footer
         flex-direction: column

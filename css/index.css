@@ -123,41 +123,30 @@ body ol, body ul {
   margin: 0 auto;
 }
 
-.furniture {
-  position: relative;
+.field {
+  display: block;
   width: 100%;
   height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.main-wall {
+.bar {
+  margin: 2vw 0 0 0;
+}
+
+.text-big {
   color: white;
   font-size: 150px;
 }
-.main-wall .signature {
+.text-small {
+  color: white;
   font-size: 20px;
 }
-.main-wall svg {
-  position: absolute;
-  z-index: 4;
-  top: 115%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
-.center-of {
-  position: absolute;
-  z-index: 4;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  opacity: 0;
-  transition: 0.5s;
-}
-.center-of._active {
-  transform: translate(-50%, -50%);
-  opacity: 1;
+.container-img {
+  position: relative;
+  text-align: center;
 }
 
 .centered {
@@ -177,9 +166,6 @@ body ol, body ul {
   color: white;
   font-weight: bold;
 }
-.third span {
-  font-size: 100px;
-}
 
 .chair {
   width: auto;
@@ -192,9 +178,6 @@ body ol, body ul {
   height: 35vw;
   width: auto;
   transition: 0.2s;
-}
-.card img:hover {
-  scale: 1.1;
 }
 .cards {
   margin-top: 5%;
@@ -296,7 +279,7 @@ footer {
   }
   .header-menu {
     position: fixed;
-    top: -110%;
+    top: -111%;
     left: 0;
     width: 100%;
     height: 100%;
@@ -313,9 +296,6 @@ footer {
   .header-list li {
     margin: 0 0 20px 0;
   }
-  .second {
-    margin-bottom: 100px;
-  }
   .card img {
     height: 100%;
     width: 100vw;
@@ -323,6 +303,9 @@ footer {
   .cards {
     margin: -4px 0 0 0;
     flex-direction: column;
+  }
+  .fa {
+    margin-right: 10px;
   }
 }
 @media (max-width: 500px) {
@@ -332,8 +315,8 @@ footer {
   body p {
     font-size: 14px;
   }
-  .main-wall span {
-    font-size: 100px;
+  .text-big {
+    font-size: 30vw;
   }
   footer {
     flex-direction: column;
