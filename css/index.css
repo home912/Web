@@ -186,12 +186,9 @@ body ol, body ul {
 }
 
 .card img {
-  height: 25vw;
-  width: auto;
-}
-.cards {
-  margin-top: 5%;
-  margin-bottom: 5%;
+  display: block;
+  height: auto;
+  width: 25vw;
 }
 .card-1 {
   background: #c59e5f;
@@ -213,7 +210,7 @@ footer {
 }
 
 .footer-block {
-  margin-right: 50pxs;
+  margin-right: 50px;
 }
 .footer-block-name {
   font-weight: bold;
@@ -225,6 +222,20 @@ footer {
 @media (max-width: 992px) {
   body p {
     font-size: 16px;
+  }
+  .card {
+    width: 100%;
+    height: auto;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .cards img {
+    margin: 0 auto;
+    height: auto;
+  }
+  .cards.container {
+    max-width: 100%;
   }
 }
 @media (max-width: 768px) {
@@ -298,6 +309,14 @@ footer {
   .header-list li {
     margin: 0 0 20px 0;
   }
+  .cards img {
+    margin: 0 auto;
+    height: 60vh;
+    width: auto;
+  }
+  .cards.container {
+    max-width: 100%;
+  }
   .fa {
     margin-right: 10px;
   }
@@ -311,13 +330,6 @@ footer {
   }
   .text-big {
     font-size: 30vw;
-  }
-  .card img {
-    height: 100%;
-    width: 100vw;
-  }
-  .cards {
-    flex-direction: column;
   }
   footer {
     flex-direction: column;

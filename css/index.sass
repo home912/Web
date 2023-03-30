@@ -85,8 +85,6 @@ body
     &-burger
         display: none
 
-    &-menu
-
     &-list
         position: relative
         z-index: 2
@@ -151,12 +149,10 @@ body
 
 .card
     & img
-        height: 25vw
-        width: auto
+        display: block
+        height: auto
+        width: 25vw
 
-    &s
-        margin-top: 5%
-        margin-bottom: 5%
     &-1
         background: #c59e5f
     &-2
@@ -172,7 +168,7 @@ footer
     border-top: 1px solid #484e47
 
 .footer-block
-    margin-right: 50pxs
+    margin-right: 50px
     &-name
         font-weight: bold
     &-item
@@ -185,6 +181,17 @@ footer
     body
         & p
             font-size: 16px
+
+    .card
+        width: 100%
+        height: auto
+        &s
+            flex-direction: column
+            & img
+                margin: 0 auto
+                height: auto
+    .cards.container
+        max-width: 100%
 
 @media (max-width: 768px)
 
@@ -256,7 +263,16 @@ footer
             flex-direction: column
             & li
                 margin: 0 0 20px 0
-        &-link
+
+    .card
+        &s
+
+            & img
+                margin: 0 auto
+                height: 60vh
+                width: auto
+    .cards.container
+        max-width: 100%
 
     .fa
         margin-right: 10px
@@ -270,13 +286,6 @@ footer
     .text
         &-big
             font-size: 30vw
-
-    .card
-        & img
-            height: 100%
-            width: 100vw
-        &s
-            flex-direction: column
 
     footer
         flex-direction: column
