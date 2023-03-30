@@ -50,6 +50,9 @@ body
         align-items: center
     &-gap
         grid-gap: 5%
+    &-cube
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 1fr 1fr
 
 .header
     position: fixed
@@ -123,7 +126,13 @@ body
     position: absolute
     top: 50%
     left: 50%
+    transform: translate(-50%, 0%)
+    opacity: 0
+    transition: 0.8s
+
+._active
     transform: translate(-50%, -50%)
+    opacity: 1
 
 .second
     margin-bottom: 38px
@@ -142,16 +151,14 @@ body
 
 .card
     & img
-        height: 35vw
+        height: 25vw
         width: auto
-        transition: 0.2s
 
     &s
         margin-top: 5%
         margin-bottom: 5%
     &-1
         background: #c59e5f
-
     &-2
         background: #00455d
     &-3
@@ -165,7 +172,7 @@ footer
     border-top: 1px solid #484e47
 
 .footer-block
-    margin-right: 50px
+    margin-right: 50pxs
     &-name
         font-weight: bold
     &-item
@@ -174,19 +181,12 @@ footer
 @media (max-width: 1200px)
 
 @media (max-width: 992px)
+
     body
         & p
             font-size: 16px
 
-    .card
-        & img
-            height: 100%
-            width: 100vw
-        &s
-            margin: -4px 0 0 0
-            flex-direction: column
-
-@media (max-width: 767px)
+@media (max-width: 768px)
 
     .lock
         overflow: hidden
@@ -257,17 +257,10 @@ footer
             & li
                 margin: 0 0 20px 0
         &-link
-        
-    .card
-        & img
-            height: 100%
-            width: 100vw
-        &s
-            margin: -4px 0 0 0
-            flex-direction: column
 
     .fa
-        margin-right: 10px 
+        margin-right: 10px
+
 @media (max-width: 500px)
     body
         min-width: 100vw
@@ -277,6 +270,13 @@ footer
     .text
         &-big
             font-size: 30vw
+
+    .card
+        & img
+            height: 100%
+            width: 100vw
+        &s
+            flex-direction: column
 
     footer
         flex-direction: column

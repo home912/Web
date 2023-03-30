@@ -70,6 +70,10 @@ body ol, body ul {
 .grid-gap {
   grid-gap: 5%;
 }
+.grid-cube {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
 
 .header {
   position: fixed;
@@ -153,7 +157,14 @@ body ol, body ul {
   position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, 0%);
+  opacity: 0;
+  transition: 0.8s;
+}
+
+._active {
   transform: translate(-50%, -50%);
+  opacity: 1;
 }
 
 .second {
@@ -175,9 +186,8 @@ body ol, body ul {
 }
 
 .card img {
-  height: 35vw;
+  height: 25vw;
   width: auto;
-  transition: 0.2s;
 }
 .cards {
   margin-top: 5%;
@@ -203,7 +213,7 @@ footer {
 }
 
 .footer-block {
-  margin-right: 50px;
+  margin-right: 50pxs;
 }
 .footer-block-name {
   font-weight: bold;
@@ -216,16 +226,8 @@ footer {
   body p {
     font-size: 16px;
   }
-  .card img {
-    height: 100%;
-    width: 100vw;
-  }
-  .cards {
-    margin: -4px 0 0 0;
-    flex-direction: column;
-  }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .lock {
     overflow: hidden;
   }
@@ -296,14 +298,6 @@ footer {
   .header-list li {
     margin: 0 0 20px 0;
   }
-  .card img {
-    height: 100%;
-    width: 100vw;
-  }
-  .cards {
-    margin: -4px 0 0 0;
-    flex-direction: column;
-  }
   .fa {
     margin-right: 10px;
   }
@@ -317,6 +311,13 @@ footer {
   }
   .text-big {
     font-size: 30vw;
+  }
+  .card img {
+    height: 100%;
+    width: 100vw;
+  }
+  .cards {
+    flex-direction: column;
   }
   footer {
     flex-direction: column;
