@@ -84,7 +84,7 @@ if (animItems.length > 0) {
 
             // Для случая когда анимированный объект выше по высоте чем окно браузера
             if (animItemHeight > window.innerHeight) {
-                animItemPoint = window.innerHeight - window.innerHeight / 4;
+                animItemPoint = window.innerHeight - window.innerHeight / animStart;
             }
 
             // Добавляем элементам класс при определенных условиях

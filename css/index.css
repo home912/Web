@@ -48,6 +48,9 @@ body h1 {
 .flex-je {
   justify-content: space-evenly;
 }
+.flex-end {
+  justify-content: end;
+}
 .flex-d-col {
   flex-direction: column;
 }
@@ -169,13 +172,13 @@ body h1 {
   transform: translate(0px, 50%);
   opacity: 0;
   transition: 0.8s;
-  margin: 10%;
+  margin: 5% auto;
 }
 
 .chair {
   display: block;
   width: auto;
-  height: 37vw;
+  height: 30vw;
   background: #c4c4c4;
   border-radius: 50%;
 }
@@ -187,6 +190,9 @@ body h1 {
   font-weight: bold;
 }
 
+.cards {
+  margin: 5% auto;
+}
 .card img {
   display: block;
   height: auto;
@@ -239,6 +245,7 @@ footer {
     height: auto;
   }
   .cards {
+    margin: 0 auto;
     flex-direction: column;
   }
   .cards img {
