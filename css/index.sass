@@ -24,6 +24,8 @@ body
     ol, ul
         list-style: none
         padding-inline-start: 0
+    h1
+        margin-top: 0
 
 .flex
     display: flex
@@ -128,24 +130,25 @@ body
     opacity: 0
     transition: 0.8s
 
-._active
-    transform: translate(-50%, -50%)
-    opacity: 1
-
 .second
-    margin-bottom: 38px
+    transform: translate(0px, 50%)
+    opacity: 0
+    transition: 0.8s
+    margin: 10%
+
+.chair
+    display: block
+    width: auto
+    height: 37vw
+    background: #c4c4c4
+    border-radius: 50%
+    
 
 .third
     position: relative
     text-align: center
     color: white
     font-weight: bold
-
-.chair
-    width: auto
-    height: 37vw
-    background: #c4c4c4
-    border-radius: 50%
 
 .card
     & img
@@ -174,6 +177,13 @@ footer
     &-item
         font-size: 20px
 
+._active
+    transform: translate(0px, 0px)
+    opacity: 1
+    &-anim
+        transform: translate(-50%, -50%)
+        opacity: 1
+
 @media (max-width: 1200px)
 
 @media (max-width: 992px)
@@ -190,6 +200,10 @@ footer
             & img
                 margin: 0 auto
                 height: auto
+
+    .text-big
+        font-size: 6rem
+
     .cards.container
         max-width: 100%
 
@@ -286,6 +300,13 @@ footer
     .text
         &-big
             font-size: 30vw
+
+    .second
+        grid-gap: 3%
+
+    .chair
+        object-fit: cover
+        height: 30vh
 
     footer
         flex-direction: column
