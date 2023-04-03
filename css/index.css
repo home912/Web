@@ -208,6 +208,10 @@ body h1 {
   background: #33492a;
 }
 
+.map {
+  border-width: 0px;
+}
+
 .fa {
   font-size: 3vh !important;
 }
