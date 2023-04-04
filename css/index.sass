@@ -128,15 +128,20 @@ body
     position: absolute
     top: 50%
     left: 50%
-    transform: translate(-50%, 0%)
+    transform: translate(-50%, -30%)
     opacity: 0
     transition: 0.8s
 
 .second
-    transform: translate(0px, 50%)
+    transform: translate(0px, 20%)
+    grid-auto-columns: minmax(200px, auto)
+    grid-template-columns: repeat(2, 1fr)
     opacity: 0
     transition: 0.8s
     margin: 5% auto
+
+.left-part
+    margin-right: 10%
 
 .chair
     display: block
@@ -152,6 +157,8 @@ body
     font-weight: bold
 
 .card
+    transition: .5s
+    border-radius: 30%
     &s
         margin: 5% auto
     & img
@@ -181,15 +188,22 @@ footer
         font-weight: bold
     &-item
         font-size: 20px
+        & li
+            margin-right: 10px
 
 ._active
-    transform: translate(0px, 0px)
-    opacity: 1
+    transform: translate(0px, 0px)!important
+    opacity: 1!important
     &-anim
-        transform: translate(-50%, -50%)
-        opacity: 1
+        transform: translate(-50%, -50%)!important
+        opacity: 1!important
 
 @media (max-width: 1200px)
+
+    footer
+        display: grid !important
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: repeat(2, 1fr)
 
 @media (max-width: 992px)
 
@@ -200,6 +214,7 @@ footer
     .card
         width: 100%
         height: auto
+        border-radius: 0%
         &s
             margin: 0 auto
             flex-direction: column
@@ -269,7 +284,7 @@ footer
 
         &-menu
             position: fixed
-            top: -111%
+            top: -115%
             left: 0
             width: 100%
             height: 100%
@@ -284,18 +299,19 @@ footer
             & li
                 margin: 0 0 20px 0
 
-    .card
-        &s
+    .second
+        flex-direction: column
 
+    .left-part
+        margin: 0
+
+    .card
             & img
                 margin: 0 auto
-                height: 60vh
+                height: 50vh
                 width: auto
-    .cards.container
-        max-width: 100%
 
-    .fa
-        margin-right: 10px
+
 
 @media (max-width: 500px)
     body
@@ -315,4 +331,5 @@ footer
         height: 30vh
 
     footer
+        display: flex !important
         flex-direction: column
