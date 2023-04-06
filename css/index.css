@@ -141,6 +141,11 @@ body h1 {
      object-fit: cover;
 }
 
+.banner img {
+  height: 30vh;
+  margin-top: 60px;
+}
+
 .bar {
   margin: 2vw 0 0 0;
 }
@@ -365,6 +370,9 @@ footer {
     margin: 0 auto;
     height: 50vh;
     width: auto;
+  }
+  section.gallery {
+    max-width: 100%;
   }
 }
 @media (max-width: 500px) {

@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
 </head>
 
 <body>
@@ -33,21 +35,71 @@
             </div>
         </div>
     </header>
+    <section class="banner">
+        <div class="container-img _anim">
+            <img class="field" src="img/chic-modern-luxury-aesthetics-style-living-room-in-gray-tone.jpg" alt="">
+            <div class="centered text-small _anim-title">GALLERY</div>
+        </div>
 
-    <div class="container-img _anim">
-        <img class="field" src="img/chic-modern-luxury-aesthetics-style-living-room-in-gray-tone.jpg" alt="">
-        <div class="centered text-small _anim-title">GALLERY</div>
-    </div>
+        <div class="container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A iusto rem numquam ea nemo ipsa, eius aperiam
+                ipsam, sed voluptatibus, dignissimos asperiores dicta blanditiis nam iste provident commodi aliquam
+                perferendis?</p>
+        </div>
+    </section>
 
-    <div class="container">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A iusto rem numquam ea nemo ipsa, eius aperiam
-            ipsam, sed voluptatibus, dignissimos asperiores dicta blanditiis nam iste provident commodi aliquam
-            perferendis?</p>
-    </div>
+    <section class="gallery container">
+        <div class="gallery-list">
+            <a href="gallery/beetle.jpg" class="gallery-item">
+                <div class="gallery-item-hover">Посмотреть</div>
+                <img src="gallery/beetle.jpg" alt="alt">
+            </a>
+            <a href="gallery/liberty.jpg" class="gallery-item">
+                <div class="gallery-item-hover">Посмотреть</div>
+                <img src="gallery/liberty.jpg" alt="alt">
+            </a>
+            <a href="gallery/lighthouse.jpg" class="gallery-item">
+                <div class="gallery-item-hover">Посмотреть</div>
+                <img src="gallery/lighthouse.jpg" alt="alt">
+            </a>
+            <a href="gallery/minimalismo.jpg" class="gallery-item">
+                <div class="gallery-item-hover">Посмотреть</div>
+                <img src="gallery/minimalismo.jpg" alt="alt">
+            </a>
+            <a href="gallery/salad.jpg" class="gallery-item">
+                <div class="gallery-item-hover">Посмотреть</div>
+                <img src="gallery/salad.jpg" alt="alt">
+            </a>
+            <a href="gallery/shutterbug.jpg" class="gallery-item">
+                <div class="gallery-item-hover">Посмотреть</div>
+                <img src="gallery/shutterbug.jpg" alt="alt">
+            </a>
+            <a href="gallery/skaterboy.jpg" class="gallery-item">
+                <div class="gallery-item-hover">Посмотреть</div>
+                <img src="gallery/skaterboy.jpg" alt="alt">
+            </a>
+            <a href="gallery/woodcraft.jpg" class="gallery-item">
+                <div class="gallery-item-hover">Посмотреть</div>
+                <img src="gallery/woodcraft.jpg" alt="alt">
+            </a>
+        </div>
+    </section>
+
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
         integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <script>
+        $(".gallery-list").magnificPopup({
+            delegate: "a",
+            type: "image",
+            gallery: {
+                enabled: true
+            }
+        });
+    </script>
     <script src="js/anim-items.js"></script>
     <script src="js/index.js"></script>
 </body>
