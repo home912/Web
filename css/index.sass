@@ -118,11 +118,11 @@ body
 .text
     &-big
         color: white
-        font-size: 150px
+        font-size: 8rem
 
     &-small
         color: white
-        font-size: 3rem
+        font-size: 2rem
 
 .container-img
     position: relative
@@ -235,12 +235,6 @@ section.gallery
         height: auto
         transition: all .5s ease
 
-@media (max-width: 991px)
-
-@media (max-width: 768px)
-
-@media (max-width: 530px)
-
 footer
     margin: 5vh 10% !important
     border-top: 1px solid #484e47
@@ -260,6 +254,13 @@ footer
     &-anim
         transform: translate(-50%, -50%)!important
         opacity: 1!important
+
+.transition-fade
+    transition: 0.4s
+    opacity: 1
+
+html.is-animating .transition-fade
+    opacity: 0
 
 @media (max-width: 1200px)
 
@@ -287,10 +288,12 @@ footer
 
     .text
         &-big
-        font-size: 6rem
-        &-small
+            font-size: 6rem
+        &-medium
             font-size: 3rem
-            
+        &-small
+            font-size: 1rem
+
     .cards.container
         max-width: 100%
 
@@ -379,7 +382,7 @@ footer
             margin: 0 auto
             height: 50vh
             width: auto
-    
+
     section.gallery
         max-width: 100%
 
@@ -394,7 +397,7 @@ footer
 
     .text
         &-big
-            font-size: 30vw
+            font-size: 20vw
 
     .second
         grid-gap: 3%

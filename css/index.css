@@ -152,11 +152,11 @@ body h1 {
 
 .text-big {
   color: white;
-  font-size: 150px;
+  font-size: 8rem;
 }
 .text-small {
   color: white;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .container-img {
@@ -315,6 +315,15 @@ footer {
   opacity: 1 !important;
 }
 
+.transition-fade {
+  transition: 0.4s;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+}
+
 @media (max-width: 1200px) {
   footer {
     display: grid !important;
@@ -339,11 +348,14 @@ footer {
     margin: 0 auto;
     height: auto;
   }
-  .text {
+  .text-big {
     font-size: 6rem;
   }
-  .text-small {
+  .text-medium {
     font-size: 3rem;
+  }
+  .text-small {
+    font-size: 1rem;
   }
   .cards.container {
     max-width: 100%;
@@ -449,7 +461,7 @@ footer {
     font-size: 14px;
   }
   .text-big {
-    font-size: 30vw;
+    font-size: 20vw;
   }
   .second {
     grid-gap: 3%;

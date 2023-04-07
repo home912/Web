@@ -16,11 +16,11 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 
-<body>
+<body id="swup" class="transition-fade">
     <header id="navbar" class="header">
         <div class="container">
             <div class="header-body flex flex-jb flex-ac">
-                <a href="/Web/index.html" class="header-logo">LOON</a>
+                <a href="/index.html" class="header-logo">LOON</a>
                 <div class="header-burger">
                     <span></span>
                 </div>
@@ -34,9 +34,9 @@
         </div>
     </header>
 
-    <div class="container-img _anim">
-        <img class="field" src="img/chic-modern-luxury-aesthetics-style-living-room-in-gray-tone.jpg" alt="">
-        <div class="centered text-small _anim-title">ABOUT US</div>
+    <div class="container-img banner _anim">
+        <img class="field banner" src="img/chic-modern-luxury-aesthetics-style-living-room-in-gray-tone.jpg" alt="">
+        <div class="centered text-big _anim-title">ABOUT US</div>
     </div>
 
     <iframe class="container map flex flex-jb" style="width: 100%; height: 30vh; border-radius: 20px; margin: 5% auto;"
@@ -76,6 +76,10 @@
     </footer>
 
 
+    <script src="https://unpkg.com/swup@3"></script>
+    <script>
+        const swup = new Swup();
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
         integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
