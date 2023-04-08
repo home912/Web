@@ -1,3 +1,7 @@
+$(window).on('load', function () {
+  $('.preloader').fadeOut().end().delay(0).fadeOut('slow');
+});
+
 /* Функция скрытия/показа navbar */
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
