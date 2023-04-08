@@ -276,6 +276,9 @@ section.gallery {
   z-index: 2;
 }
 
+.gallery-item {
+  overflow: hidden;
+}
 .gallery-item:hover .gallery-item-hover {
   opacity: 1;
 }
