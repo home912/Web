@@ -120,6 +120,10 @@ body
         color: white
         font-size: 8rem
 
+    &-medium
+        color: white
+        font-size: 5rem
+
     &-small
         color: white
         font-size: 2rem
@@ -222,8 +226,10 @@ section.gallery
     transition: opacity .5s ease
     z-index: 2
 
-.gallery-item
+.mfp-zoom-out-cur
     overflow: hidden
+
+.gallery-item
     &:hover
         .gallery-item-hover
             opacity: 1
@@ -265,31 +271,31 @@ footer
     background: #e0e0e0
     z-index: 1001
 
-.preloader__row
-    position: relative
-    top: 50%
-    left: 50%
-    width: 70px
-    height: 70px
-    margin-top: -35px
-    margin-left: -35px
-    text-align: center
-    animation: preloader-rotate 2s infinite linear
+    &__row
+        position: relative
+        top: 50%
+        left: 50%
+        width: 50px
+        height: 50px
+        margin-top: -25px
+        margin-left: -25px
+        text-align: center
+        animation: preloader-rotate 2s infinite linear
 
-.preloader__item
-    position: absolute
-    display: inline-block
-    top: 0
-    background-color: #484e47
-    border-radius: 100%
-    width: 35px
-    height: 35px
-    animation: preloader-bounce 2s infinite ease-in-out
+    &__item
+        position: absolute
+        display: inline-block
+        top: 0
+        background-color: #484e47
+        border-radius: 100%
+        width: 25px
+        height: 25px
+        animation: preloader-bounce 2s infinite ease-in-out
 
-    &:last-child
-        top: auto
-        bottom: 0
-        animation-delay: -1s
+        &:last-child
+            top: auto
+            bottom: 0
+            animation-delay: -1s
 
 @keyframes preloader-rotate
     100%

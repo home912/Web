@@ -1,5 +1,5 @@
 $(window).on('load', function () {
-  $('.preloader').fadeOut().end().delay(0).fadeOut('slow');
+  $('.preloader').fadeOut('slow').end('slow').delay().fadeOut('slow');
 });
 
 /* Функция скрытия/показа navbar */

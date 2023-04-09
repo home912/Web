@@ -154,6 +154,10 @@ body h1 {
   color: white;
   font-size: 8rem;
 }
+.text-medium {
+  color: white;
+  font-size: 5rem;
+}
 .text-small {
   color: white;
   font-size: 2rem;
@@ -276,9 +280,10 @@ section.gallery {
   z-index: 2;
 }
 
-.gallery-item {
+.mfp-zoom-out-cur {
   overflow: hidden;
 }
+
 .gallery-item:hover .gallery-item-hover {
   opacity: 1;
 }
@@ -327,28 +332,26 @@ footer {
   background: #e0e0e0;
   z-index: 1001;
 }
-
 .preloader__row {
   position: relative;
   top: 50%;
   left: 50%;
-  width: 70px;
-  height: 70px;
-  margin-top: -35px;
-  margin-left: -35px;
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+  margin-left: -25px;
   text-align: center;
   -webkit-animation: preloader-rotate 2s infinite linear;
           animation: preloader-rotate 2s infinite linear;
 }
-
 .preloader__item {
   position: absolute;
   display: inline-block;
   top: 0;
   background-color: #484e47;
   border-radius: 100%;
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
   -webkit-animation: preloader-bounce 2s infinite ease-in-out;
           animation: preloader-bounce 2s infinite ease-in-out;
 }
