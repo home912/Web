@@ -58,6 +58,12 @@ body
         grid-template-columns: 1fr 1fr
         grid-template-rows: 1fr 1fr
 
+::-webkit-scrollbar
+    width: 8px
+    &-thumb
+        background: #484e47
+        border-radius: 4px
+
 .header
     position: fixed
     width: 100%
@@ -180,6 +186,9 @@ body
 .map
     border-width: 0px
 
+.place-card
+    border-radius: 20%
+
 .fa
     font-size: 3vh !important
 
@@ -234,6 +243,11 @@ section.gallery
         max-width: 100%
         height: auto
         transition: all .5s ease
+
+.wave-btn
+    &-text
+
+    &-waves
 
 footer
     margin: 5vh 10% !important
