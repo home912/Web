@@ -353,8 +353,7 @@ footer {
   margin-top: -25px;
   margin-left: -25px;
   text-align: center;
-  -webkit-animation: preloader-rotate 2s infinite linear;
-          animation: preloader-rotate 2s infinite linear;
+  animation: preloader-rotate 2s infinite linear;
 }
 .preloader__item {
   position: absolute;
@@ -364,33 +363,17 @@ footer {
   border-radius: 100%;
   width: 25px;
   height: 25px;
-  -webkit-animation: preloader-bounce 2s infinite ease-in-out;
-          animation: preloader-bounce 2s infinite ease-in-out;
+  animation: preloader-bounce 2s infinite ease-in-out;
 }
 .preloader__item:last-child {
   top: auto;
   bottom: 0;
-  -webkit-animation-delay: -1s;
-          animation-delay: -1s;
-}
-
-@-webkit-keyframes preloader-rotate {
-  100% {
-    transform: rotate(360deg);
-  }
+  animation-delay: -1s;
 }
 
 @keyframes preloader-rotate {
   100% {
     transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes preloader-bounce {
-  0%, 100% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(1);
   }
 }
 @keyframes preloader-bounce {
