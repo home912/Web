@@ -162,6 +162,10 @@ body h1 {
   color: white;
   font-size: 8rem;
 }
+.text-medium {
+  color: white;
+  font-size: 5rem;
+}
 .text-small {
   color: white;
   font-size: 2rem;
@@ -288,6 +292,10 @@ section.gallery {
   z-index: 2;
 }
 
+.mfp-zoom-out-cur {
+  overflow: hidden;
+}
+
 .gallery-item:hover .gallery-item-hover {
   opacity: 1;
 }
@@ -327,15 +335,72 @@ footer {
   opacity: 1 !important;
 }
 
-.transition-fade {
-  transition: 0.4s;
-  opacity: 1;
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #e0e0e0;
+  z-index: 1001;
+}
+.preloader__row {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+  margin-left: -25px;
+  text-align: center;
+  -webkit-animation: preloader-rotate 2s infinite linear;
+          animation: preloader-rotate 2s infinite linear;
+}
+.preloader__item {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  background-color: #484e47;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  -webkit-animation: preloader-bounce 2s infinite ease-in-out;
+          animation: preloader-bounce 2s infinite ease-in-out;
+}
+.preloader__item:last-child {
+  top: auto;
+  bottom: 0;
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
 }
 
-html.is-animating .transition-fade {
-  opacity: 0;
+@-webkit-keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes preloader-bounce {
+  0%, 100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+@keyframes preloader-bounce {
+  0%, 100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
 @media (max-width: 1200px) {
   footer {
     display: grid !important;
