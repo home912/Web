@@ -188,6 +188,16 @@ body h1 {
   margin: 2vw 0 0 0;
 }
 
+.down-arrow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  animation: 3s linear updown infinite;
+}
+.down-arrow img {
+  transform: translate(-50%, -50%);
+}
+
 .text-big {
   color: white;
   font-size: 8rem;
@@ -401,6 +411,22 @@ footer {
   animation-delay: -1s;
 }
 
+@keyframes updown {
+  0% {
+    transform: translateY(20%);
+  }
+  50% {
+    transform: translateY(-20%);
+  }
+  100% {
+    transform: translateY(20%);
+  }
+}
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 @keyframes preloader-rotate {
   100% {
     transform: rotate(360deg);
@@ -425,19 +451,6 @@ footer {
   body p {
     font-size: 16px;
   }
-  .card {
-    width: 100%;
-    height: auto;
-    border-radius: 0%;
-  }
-  .cards {
-    margin: 0 auto;
-    flex-direction: column;
-  }
-  .cards img {
-    margin: 0 auto;
-    height: auto;
-  }
   .text-big {
     font-size: 6rem;
   }
@@ -446,9 +459,6 @@ footer {
   }
   .text-small {
     font-size: 1rem;
-  }
-  .cards.container {
-    max-width: 100%;
   }
   .gallery-item {
     flex: 33.3%;
@@ -535,6 +545,21 @@ footer {
     margin: 0 auto;
     height: 50vh;
     width: auto;
+  }
+  .cards.container {
+    max-width: 100%;
+  }
+  .card {
+    width: 100%;
+    height: auto;
+    border-radius: 0%;
+  }
+  .cards {
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .cards img {
+    margin: 0 auto;
   }
   section.gallery {
     max-width: 100%;
