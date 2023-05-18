@@ -12,6 +12,7 @@ body
         color: #484e47
         text-decoration: none
         cursor: pointer
+        -webkit-tap-highlight-color: transparent
     button
         font-family: montserrat
         font-weight: lighter
@@ -130,7 +131,7 @@ body
         font-weight: 200
         transition: 0.2s
 
-/* Эффект 21: появление границ снизу и сверху
+/*  появление границ снизу и сверху
 
 .link-effect a
     padding: 5px 10px
@@ -144,23 +145,15 @@ body
         background: #3f463e
         content: ''
         opacity: 0
-        -webkit-transition: opacity 0.3s, -webkit-transform 0.3s
-        -moz-transition: opacity 0.3s, -moz-transform 0.3s
         transition: opacity 0.3s, transform 0.3s
-        -webkit-transform: translateY(-10px)
-        -moz-transform: translateY(-10px)
         transform: translateY(-10px)
 
     &::before
         top: 0
-        -webkit-transform: translateY(-10px)
-        -moz-transform: translateY(-10px)
         transform: translateY(-10px)
 
     &::after
         bottom: 0
-        -webkit-transform: translateY(10px)
-        -moz-transform: translateY(10px)
         transform: translateY(10px)
 
     &:hover, &:focus
@@ -168,8 +161,6 @@ body
 
     &:hover::before, &:focus::before, &:hover::after, &:focus::after
         opacity: 0.5
-        -webkit-transform: translateY(0px)
-        -moz-transform: translateY(0px)
         transform: translateY(0px)
 
 .container
@@ -229,7 +220,6 @@ body
     opacity: 0
     transition: 0.8s
     margin: 5% auto
-    
 
 .left-part
     margin-right: 10%
