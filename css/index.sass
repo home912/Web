@@ -21,6 +21,7 @@ body
     p
         font-size: 20px
         text-align: justify
+    
     hr
         margin: 0
     ol, ul
@@ -87,7 +88,6 @@ body
     opacity: 0.7
     border-radius: 50%
     box-shadow: 0px 0px 50px 0 #502e2e
-    &:hover
 
 .header
     position: fixed
@@ -262,6 +262,9 @@ body
 
 .fa
     font-size: 3vh !important
+    transition: .2s
+    &:hover
+        opacity: 0.7
 
 *
     box-sizing: border-box
@@ -492,6 +495,17 @@ footer
             flex-direction: column
             & li
                 margin: 0 0 20px 0
+
+    .link-effect a
+        padding: 5px 10px
+        transition: color 0.3s
+        &::before
+            top: 0
+            transform: translateY(-5px)
+
+        &::after
+            bottom: 0
+            transform: translateY(5px)
 
     .second
         flex-direction: column

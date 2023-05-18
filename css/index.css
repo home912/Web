@@ -121,6 +121,7 @@ body h1 {
   border-radius: 50%;
   box-shadow: 0px 0px 50px 0 #502e2e;
 }
+
 .header {
   position: fixed;
   width: 100%;
@@ -321,6 +322,10 @@ body h1 {
 
 .fa {
   font-size: 3vh !important;
+  transition: 0.2s;
+}
+.fa:hover {
+  opacity: 0.7;
 }
 
 * {
@@ -570,6 +575,18 @@ footer {
   }
   .header-list li {
     margin: 0 0 20px 0;
+  }
+  .link-effect a {
+    padding: 5px 10px;
+    transition: color 0.3s;
+  }
+  .link-effect a::before {
+    top: 0;
+    transform: translateY(-5px);
+  }
+  .link-effect a::after {
+    bottom: 0;
+    transform: translateY(5px);
   }
   .second {
     flex-direction: column;
