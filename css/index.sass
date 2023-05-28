@@ -21,7 +21,7 @@ body
     p
         font-size: 20px
         text-align: justify
-    
+
     hr
         margin: 0
     ol, ul
@@ -188,6 +188,11 @@ body
     img
         transform: translate(-50%, -50%)
 
+
+
+.inner-box:hover .item-box 
+    scale: 1.2
+
 .text
     &-big
         color: white
@@ -237,6 +242,21 @@ body
     color: white
     font-weight: bold
 
+.box-wraper
+    position: relative
+
+.inner-box
+    position: relative
+    height: 380px
+    padding: 0 24px
+    overflow: hidden
+
+.item-box
+    position: absolute
+    top: -5%
+    left: -5%
+    transition: .5s
+
 .card
     transition: .5s
     border-radius: 80px
@@ -246,6 +266,7 @@ body
         display: block
         height: auto
         width: 25vw
+        
 
     &-1
         background: #c59e5f
@@ -514,23 +535,23 @@ footer
         margin: 0
 
     .card
+        width: 100%
+        height: auto
+        border-radius: 0%
         & img
             margin: 0 auto
             height: 50vh
             width: auto
 
-    .cards.container
-        max-width: 100%
-
-    .card
-        width: 100%
-        height: auto
-        border-radius: 0%
         &s
             margin: 0 auto
             flex-direction: column
+            &.container
+                max-width: 100%
             & img
                 margin: 0 auto
+        
+
 
     section.gallery
         max-width: 100%

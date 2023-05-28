@@ -235,6 +235,10 @@ body h1 {
   transform: translate(-50%, -50%);
 }
 
+.inner-box:hover .item-box {
+  scale: 1.2;
+}
+
 .text-big {
   color: white;
   font-size: 8rem;
@@ -288,6 +292,24 @@ body h1 {
   text-align: center;
   color: white;
   font-weight: bold;
+}
+
+.box-wraper {
+  position: relative;
+}
+
+.inner-box {
+  position: relative;
+  height: 380px;
+  padding: 0 24px;
+  overflow: hidden;
+}
+
+.item-box {
+  position: absolute;
+  top: -5%;
+  left: -5%;
+  transition: 0.5s;
 }
 
 .card {
@@ -594,22 +616,22 @@ footer {
   .left-part {
     margin: 0;
   }
-  .card img {
-    margin: 0 auto;
-    height: 50vh;
-    width: auto;
-  }
-  .cards.container {
-    max-width: 100%;
-  }
   .card {
     width: 100%;
     height: auto;
     border-radius: 0%;
   }
+  .card img {
+    margin: 0 auto;
+    height: 50vh;
+    width: auto;
+  }
   .cards {
     margin: 0 auto;
     flex-direction: column;
+  }
+  .cards.container {
+    max-width: 100%;
   }
   .cards img {
     margin: 0 auto;
