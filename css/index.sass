@@ -188,9 +188,7 @@ body
     img
         transform: translate(-50%, -50%)
 
-
-
-.inner-box:hover .item-box 
+.inner-box:hover .item-box
     scale: 1.2
 
 .text
@@ -226,6 +224,7 @@ body
     transition: 0.8s
     margin: 5% auto
 
+
 .left-part
     margin-right: 10%
 
@@ -242,31 +241,37 @@ body
     color: white
     font-weight: bold
 
-.box-wraper
-    position: relative
+.box
+    &-wrapper
+        position: relative
+        overflow: hidden
 
-.inner-box
-    position: relative
-    height: 380px
-    padding: 0 24px
-    overflow: hidden
+    &-image
+        transition: 0.5s
+        bottom: -28%
+        left: -25%
+        position: absolute
 
-.item-box
-    position: absolute
-    top: -5%
-    left: -5%
-    transition: .5s
+    &-text
+        padding: 20px
+
+.card:hover .box-image
+    scale: 1.2
 
 .card
+    
+    color: #fff
+    flex: 30%
     transition: .5s
-    border-radius: 80px
+    border-radius: 50px
+    height: 40vw
     &s
+        gap: 3.3%
         margin: 5% auto
     & img
         display: block
         height: auto
         width: 25vw
-        
 
     &-1
         background: #c59e5f
@@ -347,7 +352,7 @@ footer
     border-top: 1px solid #484e47
 
 .footer-block
-    margin-right: 50px
+    flex: 25%
     &-name
         font-weight: bold
     &-item
@@ -429,6 +434,9 @@ footer
         grid-template-columns: repeat(2, 1fr)
         grid-template-rows: repeat(2, 1fr)
 
+    .footer-block
+        flex: 50%
+
 @media (max-width: 992px)
 
     body
@@ -445,6 +453,8 @@ footer
 
     .gallery-item
         flex: 33.3%
+
+    
 
 @media (max-width: 768px)
 
@@ -530,6 +540,7 @@ footer
 
     .second
         flex-direction: column
+        
 
     .left-part
         margin: 0
@@ -550,8 +561,6 @@ footer
                 max-width: 100%
             & img
                 margin: 0 auto
-        
-
 
     section.gallery
         max-width: 100%
