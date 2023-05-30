@@ -176,6 +176,7 @@ body
 .banner img
     height: 30vh
     margin-top: 60px
+    filter: brightness(70%)
 
 .bar
     margin: 2vw 0 0 0
@@ -464,7 +465,7 @@ section.gallery
     font-weight: 900
     font-size: 20px
     &-text
-        margin-left: 10px
+        margin: 0 0 0 10px
 
 .aboutus
     grid-area: aboutus
@@ -485,6 +486,10 @@ section.gallery
     img
         width: auto
         height: 50px
+    &-img
+        flex: 40%
+    &-text
+        flex: 60%
 
 .address
     grid-area: address
@@ -640,6 +645,9 @@ footer
     .gallery-item
         flex: 33.3%
 
+    .collaborations
+        flex-wrap: wrap
+
 @media (max-width: 768px)
 
     .lock
@@ -786,6 +794,11 @@ footer
         grid-auto-flow: column
         gap: 20px 20px
         grid-template-areas: "aboutus aboutus" "customers branches" "collaborations collaborations" "address collaborate" "support support"
+
+    .circle-text
+        margin: 0 0 10px 0
+        p
+            text-align: center
 
 @media (max-width: 500px)
     body
