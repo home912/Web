@@ -416,8 +416,16 @@ section.gallery {
 }
 
 .swiper {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 65vh;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  background: #484e47;
+}
+
+.swiperslide > .container-img > .field {
+  height: auto;
 }
 
 footer {
