@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" href="img/Rectangle.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
@@ -107,7 +107,8 @@
                 <h1>
                     Modern lamp
                 </h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, ipsum.</p>
+                <p>It is not just a light source, it is a real work of art. They combine functionality and aesthetics,
+                    creating a unique design and atmosphere in the room.</p>
             </div>
         </div>
 
@@ -119,7 +120,8 @@
                 <h1>
                     Softy chair
                 </h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, ipsum.</p>
+                <p>Armchairs with upholstered upholstery feel pleasant softness and comfort that cannot be compared with
+                    anything else. Such chairs allow you to relax and forget about everyday worries.</p>
             </div>
         </div>
 
@@ -129,13 +131,61 @@
             </div>
             <div class="second box-text _anim-item _anim-no-hide">
                 <h1>
-                    Pretty decoration
+                    Pretty decor
                 </h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, ipsum.</p>
+                <p>It's like the icing on the cake - it adds a touch of sweetness and beauty that makes the space truly
+                    special. From delicate flower arrangements to elegant lighting fixtures</p>
             </div>
         </div>
 
     </section>
+
+    <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <section class="container-img">
+                    <img class="field" src="img/furniture.jpg" alt="">
+                    <div class="centered _anim-title flex flex-d-col flex-ac">
+                        <div class="text-big">LOON</div>
+                        <span class="text-small">The best look</span>
+                        <div сlass="bar">
+                            <svg сlass="bar" width="50px" height="5px" style="border-radius: 10px">
+                                <rect x="0" y="0" width="50" height="5" style="fill:#ffffff;" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="down-arrow">
+                        <img src="img/Vector 1.svg" alt="">
+                    </div>
+                </section>
+            </div>
+            <div class="swiper-slide">
+                <section class="container-img">
+                    <img class="field" src="img/furniture.jpg" alt="">
+                </section>
+            </div>
+            <div class="swiper-slide">
+                <section class="container-img">
+                    <img class="field" src="img/furniture.jpg" alt="">
+                </section>
+            </div>
+            ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+
     <footer class="container flex flex-jb flex-wr">
         <div class="footer-block">
             <h3 class="footer-block-name">Social media</h4>
@@ -148,7 +198,7 @@
         </div>
         <div class="footer-block">
             <h3 class="footer-block-name">Tabs</h3>
-            <ul class="header-list flex link-effect">
+            <ul class="footer-block-item flex-wr flex link-effect">
                 <li><a class="header-link" href="gallery.html">Gallery</a></li>
                 <li><a class="header-link" href="adress.html">Adress</a></li>
                 <li><a class="header-link" href="aboutus.html">About us</a></li>
@@ -171,7 +221,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
         integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="js/anim-items.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/index.js"></script>
 </body>
 

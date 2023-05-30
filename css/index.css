@@ -347,7 +347,7 @@ body h1 {
 }
 
 .fa {
-  font-size: 3vh !important;
+  font-size: 30px !important;
   transition: 0.2s;
 }
 .fa:hover {
@@ -415,6 +415,11 @@ section.gallery {
   transition: all 0.5s ease;
 }
 
+.swiper {
+  width: 100vw;
+  height: 100vh;
+}
+
 footer {
   margin: 5vh 10% !important;
   border-top: 1px solid #484e47;
@@ -431,6 +436,9 @@ footer {
 }
 .footer-block-item li {
   margin-right: 10px;
+}
+.footer-block-item li a {
+  padding: 5px 0;
 }
 
 ._active {
