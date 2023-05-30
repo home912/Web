@@ -368,6 +368,15 @@ section.gallery {
   position: relative;
 }
 
+.gallery-text {
+  margin-block: 2%;
+}
+.gallery-text p {
+  padding-block: 20px;
+  border-top: 1px solid #484e47;
+  border-bottom: 1px solid #484e47;
+}
+
 .gallery-list {
   position: relative;
   display: flex;
