@@ -2,6 +2,7 @@
 html, body {
   max-width: 100%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -96,12 +97,12 @@ body h1 {
 }
 
 ::-moz-selection {
-  background: rgba(72, 78, 71, 0.8);
+  background: rgba(72, 78, 71, 0.7803921569);
   color: black;
 }
 
 ::selection {
-  background: rgba(72, 78, 71, 0.8);
+  background: rgba(72, 78, 71, 0.7803921569);
   color: black;
 }
 

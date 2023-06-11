@@ -1,15 +1,18 @@
+$background: #484e47
+
 html, body
     max-width: 100%
     scroll-behavior: smooth
+    overflow-x: hidden
 
 body
     background: #e1e1e1
     margin: 0
-    color: #484e47
+    color: $background
     font-family: montserrat
     font-weight: lighter
     a
-        color: #484e47
+        color: $background
         text-decoration: none
         cursor: pointer
         -webkit-tap-highlight-color: transparent
@@ -64,13 +67,13 @@ body
 ::-webkit-scrollbar
     width: 8px
     &-thumb
-        background: #484e47
+        background: $background
         border-radius: 4px
         &:hover
             background: #484e47c7
 
 ::selection
-    background: #484e47cc
+    background: #484e47c7
     color: black
 
 #myBtn
@@ -306,8 +309,8 @@ section.gallery
     margin-block: 2%
     p
         padding-block: 20px
-        border-top: 1px solid #484e47
-        border-bottom: 1px solid #484e47
+        border-top: 1px solid $background
+        border-bottom: 1px solid $background
 
 .gallery-list
     position: relative
@@ -356,9 +359,9 @@ section.gallery
 
 .mail
     &-form
-        border-top: solid 1px #484e47
+        border-top: solid 1px $background
         padding-top: 5%
-        border-bottom: solid 1px #484e47
+        border-bottom: solid 1px $background
         padding-bottom: 5%
     &-wrapper
         text-align: center
@@ -369,7 +372,7 @@ section.gallery
     height: 65vh
 
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet
-    background: #484e47
+    background: $background
 
 .swiperslide>.container-img>.field
     height: auto
@@ -383,10 +386,10 @@ section.gallery
     margin: 10px 20px
     position: relative
     overflow: hidden
-    border: 1px solid #484e47
+    border: 1px solid $background
     border-radius: 8px
     font-family: 'Montserrat', sans-serif
-    color: #484e47
+    color: $background
     transition: .2s ease-in-out
 
     &:before
@@ -400,7 +403,7 @@ section.gallery
         transform: skewX(-45deg)
 
     &:hover
-        background-color: #484e47
+        background-color: $background
         a
             color: #e1e1e1 !important
 
@@ -466,7 +469,7 @@ section.gallery
 
 .circle
     border-radius: 50%
-    border: 2px solid #484e47
+    border: 2px solid $background
     width: 87px
     height: 87px
     font-weight: 900
@@ -508,7 +511,7 @@ section.gallery
         transform: translate(-50%, 0)
         display: block
         content: ''
-        background: #484e47
+        background: $background
         width: 50px
         height: 10px
         border-radius: 10px
@@ -523,7 +526,7 @@ section.gallery
         transform: translate(-50%, 0)
         display: block
         content: ''
-        background: #484e47
+        background: $background
         width: 50px
         height: 10px
         border-radius: 10px
@@ -538,14 +541,14 @@ section.gallery
         transform: translate(-50%, 0)
         display: block
         content: ''
-        background: #484e47
+        background: $background
         width: 50px
         height: 10px
         border-radius: 10px
 
 footer
     margin: 5vh 10% !important
-    border-top: 1px solid #484e47
+    border-top: 1px solid $background
 
 .footer-block
     flex: 25%
@@ -589,7 +592,7 @@ footer
         position: absolute
         display: inline-block
         top: 0
-        background-color: #484e47
+        background-color: $background
         border-radius: 100%
         width: 25px
         height: 25px
@@ -683,7 +686,7 @@ footer
             &:before
                 content: ''
                 position: absolute
-                background: #484e47
+                background: $background
                 width: 100%
                 height: 2px
                 top: 0
@@ -692,7 +695,7 @@ footer
 
             & span
                 position: absolute
-                background: #484e47
+                background: $background
                 width: 100%
                 height: 2px
                 top: 9px
@@ -702,7 +705,7 @@ footer
             &:after
                 content: ''
                 position: absolute
-                background: #484e47
+                background: $background
                 width: 100%
                 height: 2px
                 left: 0
